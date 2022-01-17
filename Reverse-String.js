@@ -61,3 +61,33 @@ return revString;
 
 // Option 7:  
 return str.split('').reduce((revString, char) => char + revString, '');  
+
+
+
+// CHALLENGE 2: VALIDATE A PALIDROME
+// Return true if palindrome and false if not 
+// ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
+ 
+function isPalindrome(){
+  const revStr = str
+                  .split('')
+                  .reverse('')
+                  .join('')
+ return revString === str; 
+}
+
+// CHALLENGE 3: REVERESE AN INTEGER
+// Return an integer in reverse
+// ex.reverseInt(521) === 125
+
+function reverseInt(int){
+  const revString = int.toString().split('').reverse().join('');
+  
+  return parseInt(revString)
+}
+
+console.log(reverseInt(125))
+
+
+
+
